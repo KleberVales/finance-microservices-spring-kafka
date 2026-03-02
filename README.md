@@ -104,9 +104,9 @@ Redes: [LinkedIn](https://www.linkedin.com/in/klebervales) | [GitHub](https://gi
 
 **Kleber Vales**
 
-Java & Spring Software Engineer
+Java & Spring Software Engineer | Cloud-Native & Event-Driven Architectures
 
-Cloud | DevOps | Microservices | Git/Github | Docker | Kubernetes | Scrum | Generative AI | Event-driven architecture
+Cloud | DevOps | Microservices | Git/Github | Docker | Kubernetes | Generative AI 
 
 <p align="justify">Software engineer with 5+ years of experience building scalable systems using Java, Spring Boot and cloud-native architectures. Strong background in microservices, event-driven systems and DevOps practices.<p/>
 
