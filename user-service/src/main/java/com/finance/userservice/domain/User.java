@@ -4,6 +4,7 @@ import com.finance.userservice.dto.UserRegisterDTO;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.UuidGenerator;
 
 import java.util.UUID;
 
@@ -15,7 +16,9 @@ public class User {
 
     @Id
     @GeneratedValue
+    @UuidGenerator
     private UUID id;
+
     private String username;
 
     @Column(unique = true,  nullable = false)

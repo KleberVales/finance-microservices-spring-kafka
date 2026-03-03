@@ -1,11 +1,9 @@
 package com.finance.userservice.controller;
 
+import com.finance.userservice.dto.LoginResponseDTO;
 import com.finance.userservice.dto.UserRegisterDTO;
 import com.finance.userservice.service.UserService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/user")
@@ -21,4 +19,12 @@ public class UserController {
     public String registerUser(@RequestBody UserRegisterDTO userRegisterDTO) {
         return userService.registerUser(userRegisterDTO);
     }
+
+    @GetMapping("/login/{email}")
+    public LoginResponseDTO findByEmail(@PathVariable String email) {
+
+        return userService.loginUser(email);
+
+    }
+
 }
