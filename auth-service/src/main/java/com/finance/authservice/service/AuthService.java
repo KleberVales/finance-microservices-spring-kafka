@@ -29,9 +29,9 @@ public class AuthService {
 
     public String registerUser(RegisterDTO registerDTO) {
 
-        String passwordHash = securityPasswordConfig.getPasswordEncoder().encode(registerDTO.getPassword());
+        String passwordHash = securityPasswordConfig.getPasswordEncoder().encode(registerDTO.getPasswordHash());
 
-        registerDTO.setPassword(passwordHash);
+        registerDTO.setPasswordHash(passwordHash);
 
         client.registerUser(registerDTO);
 

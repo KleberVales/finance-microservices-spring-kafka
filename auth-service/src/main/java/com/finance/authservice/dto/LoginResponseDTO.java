@@ -3,11 +3,21 @@ package com.finance.authservice.dto;
 public class LoginResponseDTO {
 
     private String token;
-    private String expiresIn;
+    private Long expiresIn;
 
-    public void setToken(String token) {
+    public String getToken() {
+        return token;
     }
 
-    public void setExpiresIn(long expiration) {
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public Long getExpiresIn() {
+        return expiresIn;
+    }
+
+    public void setExpiresIn(Long expiresIn) {
+        this.expiresIn = expiresIn;
     }
 }
