@@ -1,42 +1,31 @@
 package com.finance.accountservice.domain;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name="accounts")
+@Table(name = "accounts")
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Account {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private UUID id;
 
-    @Column(nullable = false)
-    private UUID userId; // reference to user-service
+    private UUID userId;
 
-    @Column(nullable = false)
-    private String accountNumber;
-
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private AccountType type; // CHECKING, SAVINGS, CREDIT
-
-    @Column(nullable = false)
     private BigDecimal balance;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private AccountStatus status; // ACTIVE, BLOCKED, CLOSED
+    private AccountType accountType;
 
-    private LocalDateTime createdAt;
-
-    private LocalDateTime updatedAt;
-
+    @Enumerated(EnumType.STRING)
+    private AccountStatus accountStatus;
 }
