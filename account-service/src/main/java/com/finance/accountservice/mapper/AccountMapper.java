@@ -13,9 +13,10 @@ public class AccountMapper {
 
         return Account.builder()
                 .userId(dto.getUserId())
-                .accountType(dto.getAccountType())
-                .balance(BigDecimal.ZERO)
-                .accountStatus(AccountStatus.ACTIVE)
+                .creditLimit(BigDecimal.ZERO)
+                .usedAmount(BigDecimal.ZERO)
+                .availableLimit(BigDecimal.ZERO)
+                .status(AccountStatus.ACTIVE)
                 .build();
     }
 
@@ -24,9 +25,9 @@ public class AccountMapper {
         return AccountResponseDTO.builder()
                 .id(account.getId())
                 .userId(account.getUserId())
-                .balance(account.getBalance())
-                .accountType(account.getAccountType())
-                .accountStatus(account.getAccountStatus())
+                .creditLimit(account.getCreditLimit())
+                .availableLimit(account.getAvailableLimit())
+                .accountStatus(AccountStatus.ACTIVE)
                 .build();
     }
 

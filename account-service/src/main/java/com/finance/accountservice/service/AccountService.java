@@ -41,10 +41,9 @@ public class AccountService {
         Account account = repository.findById(id)
                 .orElseThrow(() -> new AccountNotFoundException("Account not found"));
 
-        account.setBalance(account.getBalance().add(amount));
+        account.setCreditLimit(amount);
 
         repository.save(account);
-
 
         return AccountMapper.toDTO(account);
     }

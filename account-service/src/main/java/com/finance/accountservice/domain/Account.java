@@ -21,11 +21,13 @@ public class Account {
 
     private UUID userId;
 
-    private BigDecimal balance;
+    private BigDecimal creditLimit;
+
+    private BigDecimal usedAmount;
+
+    private BigDecimal availableLimit;
 
     @Enumerated(EnumType.STRING)
-    private AccountType accountType;
+    private AccountStatus status;
 
-    @Enumerated(EnumType.STRING)
-    private AccountStatus accountStatus;
 }

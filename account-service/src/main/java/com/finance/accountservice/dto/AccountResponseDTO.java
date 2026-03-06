@@ -1,7 +1,6 @@
 package com.finance.accountservice.dto;
 
 import com.finance.accountservice.domain.AccountStatus;
-import com.finance.accountservice.domain.AccountType;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -14,8 +13,9 @@ public class AccountResponseDTO {
 
     private UUID id;
     private UUID userId;
-    private BigDecimal balance;
-    private AccountType accountType;
+    private BigDecimal creditLimit;
+    private BigDecimal usedAmount;
+    private BigDecimal availableLimit;
     private AccountStatus accountStatus;
 
 }
