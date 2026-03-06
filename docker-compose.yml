@@ -1,9 +1,9 @@
 
 services:
 
-  users-db:
+  user-db:
     image: postgres:17
-    container_name: users-db
+    container_name: user-db
     environment:
       POSTGRES_DB: user_db
       POSTGRES_USER: user_service
@@ -11,11 +11,11 @@ services:
     ports:
       - "5433:5432"
     volumes:
-      - users_data:/var/lib/postgresql/data
+      - user_data:/var/lib/postgresql/data
 
   accounts-db:
     image: postgres:17
-    container_name: accounts-db
+    container_name: account-db
     environment:
       POSTGRES_DB: account_db
       POSTGRES_USER: account_service
@@ -23,13 +23,13 @@ services:
     ports:
       - "5434:5432"
     volumes:
-      - accounts_data:/var/lib/postgresql/data
+      - account_data:/var/lib/postgresql/data
 
   user-service:
     build: ./user-service
     container_name: user-service
     depends_on:
-      - users-db
+      - user-db
     ports:
       - "8081:8080"
     environment:
@@ -53,12 +53,12 @@ services:
     depends_on:
       - accounts-db
     ports:
-      - "8082:8080"
+      - "8083:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://accounts-db:5432/accounts_db
+      SPRING_DATASOURCE_URL: jdbc:postgresql://account-db:5432/account_db
       SPRING_DATASOURCE_USERNAME: account_service
       SPRING_DATASOURCE_PASSWORD: account_service_pass
 
 volumes:
-  users_data:
-  accounts_data:
+  user_data:
+  account_data:
