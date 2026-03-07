@@ -122,6 +122,9 @@ This will start:
 |------|------|
 | auth-service | 8082 |
 | user-service | 8081 |
+| account-service | 8083 |
+
+---
 
 
 
