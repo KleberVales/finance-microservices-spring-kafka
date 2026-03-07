@@ -109,5 +109,8 @@ docker compose up --build
 
 This will start:
 
+- Kafka
+
+
 
 
