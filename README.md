@@ -98,28 +98,4 @@ finance-microservices-spring-kafka
 
 - Docker
 - Docker Compose
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Java 21
