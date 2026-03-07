@@ -66,6 +66,8 @@ Account Service
    ↓
 Publish event: account-created
    ↓
+Kafka Topic
+   ↓
 
 ```
 
