@@ -58,6 +58,9 @@ Responsible for managing financial accounts and reacting to user events.
 
 ## Event Flow
 
+Example flow when a new account is created:
+
+
 
 
 
