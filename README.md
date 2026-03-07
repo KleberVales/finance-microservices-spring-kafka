@@ -1,5 +1,12 @@
 # Finance Microservices - Spring Kafka
 
+A microservices-based financial system built with Spring Boot and Apache Kafka using an event-driven architecture.
+
+This project demonstrates how to build scalable microservices communicating asynchronously using Kafka while maintaining independent databases for each service.
+
+---
+
+
 ## Project Structure
 
 ```text
