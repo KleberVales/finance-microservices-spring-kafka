@@ -121,6 +121,7 @@ This will start:
 | Service | Port |
 |------|------|
 | auth-service | 8082 |
+| user-service | 8081 |
 
 
 
