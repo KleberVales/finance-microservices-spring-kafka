@@ -44,6 +44,9 @@ Event-driven communication ensures loose coupling between services and improves 
 
 ### Auth Service
 
+Handles authentication and authorization.
+
+
 
 
 
