@@ -6,8 +6,7 @@ This project demonstrates how to build scalable microservices communicating asyn
 
 ---
 
-
-## Project Structure
+## Architecture
 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────┐
