@@ -78,6 +78,7 @@ This allows services to remain independent and react to events asynchronously.
 
 ## Project Structure
 
+```text
 finance-microservices-spring-kafka
 │
 ├── auth-service
@@ -85,6 +86,9 @@ finance-microservices-spring-kafka
 ├── account-service
 │
 ├── docker-compose.yml
+│
+└── README.md
+```
 
 
 
