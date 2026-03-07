@@ -52,6 +52,10 @@ Responsible for managing users and publishing user-related events.
 
 ### Account Service
 
+Responsible for managing financial accounts and reacting to user events.
+
+---
+
 
 
 
