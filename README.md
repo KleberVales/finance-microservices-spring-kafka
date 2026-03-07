@@ -36,7 +36,9 @@ Event-driven communication ensures loose coupling between services and improves 
 - Apache Kafka
 - PostgreSQL
 - Docker
+- Gradle
 
+---
 
 
 
