@@ -13,6 +13,8 @@ The system is composed of multiple microservices that communicate through events
 ```text
 
 Client
+  ↓
+Auth Service
 
 ```
 
