@@ -50,6 +50,9 @@ Handles authentication and authorization.
 
 Responsible for managing users and publishing user-related events.
 
+### Account Service
+
+
 
 
 
