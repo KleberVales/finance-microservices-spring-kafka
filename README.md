@@ -119,6 +119,8 @@ This will start:
 ### Running Services
 
 | Service | Port |
+|------|------|
+| auth-service | 8082 |
 
 
 
