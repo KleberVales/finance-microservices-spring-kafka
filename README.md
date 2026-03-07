@@ -111,6 +111,7 @@ This will start:
 
 - Kafka
 - Zookeeper
+- PostgreSQL databases
 
 
 
