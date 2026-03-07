@@ -42,6 +42,9 @@ Event-driven communication ensures loose coupling between services and improves 
 
 ## Microservices
 
+### Auth Service
+
+
 
 
 
