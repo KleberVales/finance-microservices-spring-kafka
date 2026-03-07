@@ -10,4 +10,10 @@ This project demonstrates how to build scalable microservices communicating asyn
 
 The system is composed of multiple microservices that communicate through events published to Kafka topics.
 
+```text
+
+Client
+
+```
+
 
