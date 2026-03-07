@@ -64,6 +64,8 @@ Example flow when a new account is created:
 
 Account Service
    ↓
+Publish event: account-created
+   ↓
 
 ```
 
