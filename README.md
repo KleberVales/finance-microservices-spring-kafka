@@ -90,6 +90,10 @@ finance-microservices-spring-kafka
 └── README.md
 ```
 
+---
+
+## Running the Project
+
 
 
 
