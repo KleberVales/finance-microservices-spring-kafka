@@ -33,6 +33,7 @@ Event-driven communication ensures loose coupling between services and improves 
 - Java 21
 - Spring Boot
 - Spring Data JPA
+- Apache Kafka
 
 
 
