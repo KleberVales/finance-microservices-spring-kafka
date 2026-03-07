@@ -97,6 +97,7 @@ finance-microservices-spring-kafka
 ### Requirements
 
 - Docker
+- Docker Compose
 
 
 
