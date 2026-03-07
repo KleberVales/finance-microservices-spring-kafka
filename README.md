@@ -94,6 +94,9 @@ finance-microservices-spring-kafka
 
 ## Running the Project
 
+### Requirements
+
+
 
 
 
