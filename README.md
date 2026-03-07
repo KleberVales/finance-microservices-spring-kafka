@@ -15,6 +15,8 @@ The system is composed of multiple microservices that communicate through events
 Client
   ↓
 Auth Service
+  ↓
+User Service → publishes events → Kafka
 
 ```
 
