@@ -107,4 +107,7 @@ finance-microservices-spring-kafka
 
 docker compose up --build
 
+This will start:
+
+
 
