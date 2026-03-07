@@ -35,6 +35,7 @@ Event-driven communication ensures loose coupling between services and improves 
 - Spring Data JPA
 - Apache Kafka
 - PostgreSQL
+- Docker
 
 
 
