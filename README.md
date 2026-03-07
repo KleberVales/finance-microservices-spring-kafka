@@ -60,6 +60,13 @@ Responsible for managing financial accounts and reacting to user events.
 
 Example flow when a new account is created:
 
+```text
+
+Account Service
+   ↓
+
+```
+
 
 
 
