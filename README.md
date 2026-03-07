@@ -1,4 +1,4 @@
-# finance-microservices-spring-kafka
+# Finance Microservices - Spring Kafka
 
 ## Project Structure
 
