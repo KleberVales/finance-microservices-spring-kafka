@@ -101,4 +101,8 @@ finance-microservices-spring-kafka
 - Java 21
 - Gradle
 
+---
+
+### Start the system
+
 
