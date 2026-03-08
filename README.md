@@ -3,8 +3,6 @@
 
 ```text
 
-Kafka Topic
-   ↓
 Other services consume the event
 
 ```
