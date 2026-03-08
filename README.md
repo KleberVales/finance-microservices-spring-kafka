@@ -6,8 +6,7 @@
 ```text
 
  
-count Service → consumes events
-  ↓
+  
 PostgreSQL databases per service
 
 ```
