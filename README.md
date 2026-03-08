@@ -1,7 +1,6 @@
 # Finance Microservices - Spring Kafka
 
 
-### Auth Service
 
 Handles authentication and authorization.
 
