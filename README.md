@@ -1,7 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-
-- Java 21
 - Spring Boot
 - Spring Data JPA
 - Apache Kafka
