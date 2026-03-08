@@ -1,16 +1,6 @@
 # Finance Microservices - Spring Kafka
 
 
-
-
-```text
-
- 
-  
-PostgreSQL databases per service
-
-```
-
 Event-driven communication ensures loose coupling between services and improves scalability.
 
 ---
