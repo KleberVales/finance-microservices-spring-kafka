@@ -5,7 +5,6 @@
 
 ```text
 
-Client
   ↓
 Auth Service
   ↓
