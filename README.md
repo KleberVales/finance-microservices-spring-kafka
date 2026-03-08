@@ -1,8 +1,5 @@
 # Finance Microservices - Spring Kafka
 
----
-
-## Running the Project
 
 ### Requirements
 
