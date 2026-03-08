@@ -3,8 +3,7 @@
 
 ```text
 
-├── docker-compose.yml
-│
+
 └── README.md
 ```
 
