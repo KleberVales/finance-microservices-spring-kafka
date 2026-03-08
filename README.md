@@ -2,7 +2,6 @@
 
 
 
-The system is composed of multiple microservices that communicate through events published to Kafka topics.
 
 ```text
 
