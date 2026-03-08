@@ -1,8 +1,5 @@
 # Finance Microservices - Spring Kafka
 
----
-
-## Technologies
 
 - Java 21
 - Spring Boot
