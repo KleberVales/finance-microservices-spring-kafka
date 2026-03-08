@@ -1,6 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-- Java 21
 - Gradle
 
 ---
