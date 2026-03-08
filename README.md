@@ -2,8 +2,6 @@
 
 
 
-Handles authentication and authorization.
-
 ### User Service
 
 Responsible for managing users and publishing user-related events.
