@@ -1,12 +1,6 @@
 # Finance Microservices - Spring Kafka
 
 
-```text
-
-Other services consume the event
-
-```
-
 This allows services to remain independent and react to events asynchronously.
 
 ---
