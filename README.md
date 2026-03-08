@@ -3,7 +3,6 @@
 
 ```text
 
-├── user-service
 ├── account-service
 │
 ├── docker-compose.yml
