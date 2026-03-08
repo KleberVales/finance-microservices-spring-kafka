@@ -1,8 +1,6 @@
 # Finance Microservices - Spring Kafka
 
 
-### Start the system
-
 docker compose up --build
 
 This will start:
