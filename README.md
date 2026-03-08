@@ -1,8 +1,6 @@
 # Finance Microservices - Spring Kafka
 
 
-### Requirements
-
 - Docker
 - Docker Compose
 - Java 21
