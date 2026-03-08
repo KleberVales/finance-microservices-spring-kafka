@@ -1,7 +1,5 @@
 # Finance Microservices - Spring Kafka
 
----
-
 
 ```text
 finance-microservices-spring-kafka
