@@ -3,8 +3,6 @@
 
 ```text
 
-├── account-service
-│
 ├── docker-compose.yml
 │
 └── README.md
