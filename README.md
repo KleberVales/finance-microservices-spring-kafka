@@ -2,7 +2,6 @@
 
 
 ```text
-finance-microservices-spring-kafka
 │
 ├── auth-service
 ├── user-service
