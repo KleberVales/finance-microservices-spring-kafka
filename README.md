@@ -2,8 +2,7 @@
 
 
 ```text
-│
-├── auth-service
+
 ├── user-service
 ├── account-service
 │
