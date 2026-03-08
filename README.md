@@ -1,6 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-## Microservices
 
 ### Auth Service
 
