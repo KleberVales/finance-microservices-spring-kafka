@@ -1,6 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-- Apache Kafka
 - PostgreSQL
 - Docker
 - Gradle
