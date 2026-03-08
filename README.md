@@ -1,9 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-- Gradle
-
----
-
 ## Microservices
 
 ### Auth Service
