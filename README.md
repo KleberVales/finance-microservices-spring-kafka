@@ -3,8 +3,6 @@
 
 ```text
 
-Publish event: account-created
-   ↓
 Kafka Topic
    ↓
 Other services consume the event
