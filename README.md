@@ -6,9 +6,7 @@
 ```text
 
  
-User Service → publishes events → Kafka
-  ↓
-Account Service → consumes events
+count Service → consumes events
   ↓
 PostgreSQL databases per service
 
