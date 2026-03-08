@@ -1,8 +1,6 @@
 # Finance Microservices - Spring Kafka
 
 
-This will start:
-
 - Kafka
 - Zookeeper
 - PostgreSQL databases
