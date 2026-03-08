@@ -1,8 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-
-Event-driven communication ensures loose coupling between services and improves scalability.
-
 ---
 
 ## Technologies
