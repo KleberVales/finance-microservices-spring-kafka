@@ -1,6 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-- Spring Data JPA
 - Apache Kafka
 - PostgreSQL
 - Docker
