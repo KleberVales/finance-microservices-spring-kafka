@@ -1,12 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-
-```text
-
-
-└── README.md
-```
-
 ---
 
 ## Running the Project
