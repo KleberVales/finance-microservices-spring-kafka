@@ -5,9 +5,7 @@
 
 ```text
 
-  ↓
-Auth Service
-  ↓
+ 
 User Service → publishes events → Kafka
   ↓
 Account Service → consumes events
