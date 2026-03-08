@@ -1,6 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-- Docker Compose
 - Java 21
 - Gradle
 
