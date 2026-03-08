@@ -1,9 +1,6 @@
 # Finance Microservices - Spring Kafka
 
 
-
-## Event Flow
-
 Example flow when a new account is created:
 
 ```text
