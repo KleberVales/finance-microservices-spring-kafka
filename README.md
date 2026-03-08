@@ -1,8 +1,6 @@
 # Finance Microservices - Spring Kafka
 
 
-### Account Service
-
 Responsible for managing financial accounts and reacting to user events.
 
 ---
