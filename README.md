@@ -2,7 +2,6 @@
 
 ---
 
-## Project Structure
 
 ```text
 finance-microservices-spring-kafka
