@@ -1,8 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-- Gradle
-
----
 
 ### Start the system
 
