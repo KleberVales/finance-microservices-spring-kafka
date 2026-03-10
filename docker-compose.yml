@@ -25,6 +25,18 @@ services:
     volumes:
       - account_data:/var/lib/postgresql/data
 
+  planning-db:
+    image: postgres:17
+    container_name: planning-db
+    environment:
+      POSTGRES_DB: planning_db
+      POSTGRES_USER: planning_service
+      POSTGRES_PASSWORD: planning_service_pass
+    ports:
+      - "5435:5432"
+    volumes:
+      - planning_data:/var/lib/postgresql/data
+
   zookeeper:
     image: confluentinc/cp-zookeeper:7.6.0
     container_name: zookeeper
@@ -81,6 +93,19 @@ services:
       SPRING_DATASOURCE_USERNAME: account_service
       SPRING_DATASOURCE_PASSWORD: account_service_pass
 
+  planning-service:
+    build: ./planning-service
+    container_name: planning-service
+    depends_on:
+      - planning-db
+    ports:
+      - "8084:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://planning-db:5432/planning_db
+      SPRING_DATASOURCE_USERNAME: planning_service
+      SPRING_DATASOURCE_PASSWORD: planning_service_pass
+
 volumes:
   user_data:
   account_data:
+  planning_data:
