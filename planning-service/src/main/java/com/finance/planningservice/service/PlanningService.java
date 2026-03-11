@@ -18,7 +18,6 @@ public class PlanningService {
         this.kafkaTemplate = kafkaTemplate;
         this.planningRepository = planningRepository;
     }
-    public PlanningService() {}
 
     public void creditLiberation(RequestDTO requestDTO) {
 
