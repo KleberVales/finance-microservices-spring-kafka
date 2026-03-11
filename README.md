@@ -1,6 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-- Zookeeper
 - PostgreSQL databases
 - All microservices
 
