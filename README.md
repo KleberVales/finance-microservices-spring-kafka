@@ -1,8 +1,6 @@
 # Finance Microservices - Spring Kafka
 
 
-### Running Services
-
 | Service | Port |
 |------|------|
 | auth-service | 8082 |
