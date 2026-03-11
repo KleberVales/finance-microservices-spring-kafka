@@ -1,7 +1,5 @@
 # Finance Microservices - Spring Kafka
 
----
-
 ## ✉️ Contact
 
 Email: klebervales.dev@gmail.com
