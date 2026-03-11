@@ -5,7 +5,7 @@ import com.finance.accountservice.dto.AccountRequestDTO;
 import com.finance.accountservice.dto.AccountResponseDTO;
 import com.finance.accountservice.event.AccountCreatedEvent;
 import com.finance.accountservice.event.consumer.AllowanceApprovedEvent;
-import com.finance.accountservice.exception.AccountNotFoundException;
+import com.finance.accountservice.event.consumer.CardTransactionReceivedEvent;
 import com.finance.accountservice.mapper.AccountMapper;
 import com.finance.accountservice.repository.AccountRepository;
 import lombok.RequiredArgsConstructor;
@@ -13,9 +13,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 import java.util.Optional;
-import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -37,31 +35,10 @@ public class AccountService {
 
     }
 
-    public AccountResponseDTO getAccount(UUID id) {
-
-        Account account = repository.findById(id)
-                .orElseThrow(() -> new AccountNotFoundException("Account not found"));
-
-        return AccountMapper.toDTO(account);
-    }
-
-    public AccountResponseDTO credit(UUID id, BigDecimal amount) {
-
-        Account account = repository.findById(id)
-                .orElseThrow(() -> new AccountNotFoundException("Account not found"));
-
-        account.setCreditLimit(amount);
-
-        repository.save(account);
-
-        return AccountMapper.toDTO(account);
-    }
-
     @KafkaListener(topics = "allowance-Approved-topic", groupId = "planning-service-group",
             containerFactory = "kafkaListenerContainerFactory")
     public void consumeAllowanceApproved(AllowanceApprovedEvent event) {
         System.out.println("Evento recebido: " + event);
-        // lógica de negócio aqui
 
         Account account = new Account();
 
@@ -69,6 +46,18 @@ public class AccountService {
         account.setUsedAmount(event.getAccount_amount());
         repository.save(account);
 
+    }
+
+    @KafkaListener(topics = "card-transaction-received-topic", groupId = "account-consumer-group")
+    public void debited(CardTransactionReceivedEvent event){
+
+        Account account = repository.findById(event.getAccount_id())
+                .orElseThrow(() -> new RuntimeException("Conta não encontrada"));
+
+        account.setId(event.getAccount_id());
+        account.setUsedAmount(account.getUsedAmount().subtract(event.getDebit()));
+
+        repository.save(account);
 
     }
 

@@ -21,17 +21,6 @@ public class AccountController {
         return service.createAccount(request);
     }
 
-    @GetMapping("/{id}")
-    public AccountResponseDTO get(@PathVariable UUID id) {
-        return service.getAccount(id);
-    }
 
-    @PostMapping("/{id}/credit")
-    public AccountResponseDTO credit(
-            @PathVariable UUID id,
-            @RequestParam BigDecimal amount) {
-
-        return service.credit(id, amount);
-    }
 
 }

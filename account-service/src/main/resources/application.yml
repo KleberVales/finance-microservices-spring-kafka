@@ -22,6 +22,7 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
 
+
   jpa:
     hibernate:
       ddl-auto: create-drop
