@@ -1,6 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-- PostgreSQL databases
 - All microservices
 
 ---
