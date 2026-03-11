@@ -1,7 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-| account-service | 8083 |
-
 ---
 
 ## ✉️ Contact
