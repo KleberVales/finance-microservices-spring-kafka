@@ -1,7 +1,6 @@
 # Finance Microservices - Spring Kafka
 
 
-| Service | Port |
 |------|------|
 | auth-service | 8082 |
 | user-service | 8081 |
