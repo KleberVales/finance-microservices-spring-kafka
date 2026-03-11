@@ -1,7 +1,5 @@
 # Finance Microservices - Spring Kafka
 
-- All microservices
-
 ---
 
 ### Running Services
