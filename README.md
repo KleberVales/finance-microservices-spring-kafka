@@ -31,6 +31,7 @@ Key Concepts
 - Microservices Architecture
 - Event-driven communication
 - Kafka messaging
+- Domain-driven structure
 
 
 
