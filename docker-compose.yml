@@ -37,6 +37,18 @@ services:
     volumes:
       - planning_data:/var/lib/postgresql/data
 
+  report-db:
+    image: postgres:17
+    container_name: report-db
+    environment:
+      POSTGRES_DB: report_db
+      POSTGRES_USER: report_service
+      POSTGRES_PASSWORD: report_service_pass
+    ports:
+      - "5436:5432"
+    volumes:
+      - report_data:/var/lib/postgresql/data
+
   zookeeper:
     image: confluentinc/cp-zookeeper:7.6.0
     container_name: zookeeper
@@ -105,7 +117,20 @@ services:
       SPRING_DATASOURCE_USERNAME: planning_service
       SPRING_DATASOURCE_PASSWORD: planning_service_pass
 
+  report-service:
+    build: ./report-service
+    container_name: report-service
+    depends_on:
+      - report-db
+    ports:
+      - "8085:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://report-db:5432/report_db
+      SPRING_DATASOURCE_USERNAME: report_service
+      SPRING_DATASOURCE_PASSWORD: report_service_pass
+
 volumes:
   user_data:
   account_data:
   planning_data:
+  report_data:
