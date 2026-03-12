@@ -9,6 +9,11 @@ The services communicate asynchronously through Kafka events, allowing each micr
 
 The system follows a microservices architecture combined with event-driven communication.
 
+```text
+Client / API Requests
+  
+```
+
 
 
 
