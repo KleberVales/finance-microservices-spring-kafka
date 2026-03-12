@@ -35,7 +35,7 @@ public class AccountService {
 
     }
 
-    @KafkaListener(topics = "allowance-Approved-topic", groupId = "planning-service-group",
+    @KafkaListener(topics = "allowance-approved-topic", groupId = "planning-service-group",
             containerFactory = "kafkaListenerContainerFactory")
     public void consumeAllowanceApproved(AllowanceApprovedEvent event) {
         System.out.println("Evento recebido: " + event);
@@ -48,7 +48,8 @@ public class AccountService {
 
     }
 
-    @KafkaListener(topics = "card-transaction-received-topic", groupId = "account-consumer-group")
+    @KafkaListener(topics = "card-transaction-received-topic", groupId = "account-consumer-group",
+            containerFactory = "cardTransactionKafkaListenerFactory")
     public void debited(CardTransactionReceivedEvent event){
 
         Account account = repository.findById(event.getAccount_id())
