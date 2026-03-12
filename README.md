@@ -32,6 +32,7 @@ Key Concepts
 - Event-driven communication
 - Kafka messaging
 - Domain-driven structure
+- Loose coupling between services
 
 
 
