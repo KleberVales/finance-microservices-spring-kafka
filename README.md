@@ -20,6 +20,9 @@ Client / API Requests
         │
         ▼
  Kafka Producer ─────► Kafka Topic ─────► Kafka Consumer
+        │                                 │
+        ▼                                 ▼
+     Database                          Other Services
   
 ```
 
