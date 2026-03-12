@@ -11,6 +11,9 @@ The system follows a microservices architecture combined with event-driven commu
 
 ```text
 Client / API Requests
+        │
+        ▼
+   REST Controllers
   
 ```
 
