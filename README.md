@@ -5,6 +5,8 @@ This project demonstrates how to design event-driven microservices for handling 
 
 The services communicate asynchronously through Kafka events, allowing each microservice to evolve independently while maintaining system consistency.
 
+## Architecture
+
 
 
 
