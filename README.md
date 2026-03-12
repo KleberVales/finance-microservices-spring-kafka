@@ -28,6 +28,8 @@ Client / API Requests
 
 Key Concepts
 
+- Microservices Architecture
+
 
 
 
