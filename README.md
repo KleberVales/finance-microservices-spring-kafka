@@ -17,6 +17,9 @@ Client / API Requests
         │
         ▼
      Services
+        │
+        ▼
+ Kafka Producer ─────► Kafka Topic ─────► Kafka Consumer
   
 ```
 
