@@ -14,6 +14,9 @@ Client / API Requests
         │
         ▼
    REST Controllers
+        │
+        ▼
+     Services
   
 ```
 
