@@ -9,6 +9,33 @@ The services communicate asynchronously through Kafka events, allowing each micr
 
 The system follows a microservices architecture combined with event-driven communication.
 
+```text
+Client / API Requests
+        │
+        ▼
+   REST Controllers
+        │
+        ▼
+     Services
+        │
+        ▼
+ Kafka Producer ─────► Kafka Topic ─────► Kafka Consumer
+        │                                 │
+        ▼                                 ▼
+     Database                          Other Services
+  
+```
+
+Key Concepts
+
+- Microservices Architecture
+- Event-driven communication
+- Kafka messaging
+- Domain-driven structure
+- Loose coupling between services
+
+## Project Structure
+
 
 
 
