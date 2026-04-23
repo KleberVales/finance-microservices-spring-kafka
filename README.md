@@ -36,5 +36,3 @@ Key Concepts
 
 
 kleber Vales 
-
-Software Engineer 
