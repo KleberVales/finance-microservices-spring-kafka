@@ -33,6 +33,3 @@ Key Concepts
 - Kafka messaging
 - Domain-driven structure
 - Loose coupling between services
-
-
-kleber Vales 
